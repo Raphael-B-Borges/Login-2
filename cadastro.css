@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Open Sans', sans-serif;
+   }
+   body{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       display: block;
+       background: rgb(36, 62, 71);
+   }
+   form{
+       background-image: linear-gradient(90deg, black,  #3e5b69);
+       max-width: 500px;
+       max-height: 550px;
+       height: 550px;
+       width: 70%;
+       padding: 20px;
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       border: 2px solid transparent;
+       border-radius: 10px;
+       box-shadow: 0 1px 20px black;
+   }
+   form h2{
+    position: relative;
+       display: block;
+       margin: -20px 60px 0 50px;
+       font-size: 24px;
+       letter-spacing: .1em;
+       text-align: center;
+       color: #5f7c8a;
+   }
+   form h2::before{
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 24px;
+    background-color: rgb(109, 166, 212);
+    opacity: .2;
+    border-top: 3px solid rgb(124, 194, 252);
+    margin-left: -4.2px;
+    margin-top: .8px;
+    border-radius: 20px;
+   }
+   svg{
+    color: #5f7c8a;
+   }
+   .biabi-person-plus-fill{
+   margin: -10px  80px 5px 185px;
+   display: block;
+   }
+   
+   .biabi-person-square, .biabi-envelope-fill, .biabi-phone-vibrate, .biabi-lock-fill{
+    margin: -30px 0 9px 0;
+   }
+
+   #nome, #email, #phone, #senha{
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border:hidden;
+    background: transparent;
+    width: 100%;
+    padding:20px 0 0 32px;
+    margin: 10px 0;
+    border-bottom: 2px solid rgb(109, 166, 212) ;
+    color: rgb(105, 162, 209);
+    position: relative;
+    transform: translateY(16px);
+    transition: .25s ease-in-out;
+   }
+   #nome::placeholder, #email::placeholder, #phone::placeholder, #senha::placeholder{
+    color: #6e92a3;
+   }
+   button{
+    z-index: 1;
+    position: relative;
+   }
+   .opened{
+    z-index: 21;
+    position: absolute;
+   }
+   .eye{
+    outline: 0;
+    box-sizing: 0 0 0 0;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: -42px 0 0 390px;
+    z-index: 20;
+   }
+img{
+    outline: 0;
+    box-sizing: 0 0 0 0;
+    color: aliceblue;
+    position: absolute;
+}
+.eye:focus, .opened:focus{
+    outline: inset 1px  rgb(121, 186, 240);
+    margin-right: 30px;
+    padding: 1px 23px -1px 6px;
+}
+.eye:hover .opened:hover{
+    color: rgb(121, 186, 240) ;
+}
+
+#botao{
+    width: 60%;
+    margin: 60px 85px ;
+    padding: 12px 0;
+    border-radius: 20px;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    color: rgb(150, 250, 217);
+   background-color: #568ea8;
+   cursor: pointer;
+   border: 2px outset #9bcee5;
+}
+#botao:hover{
+    background-color: #6e92a352;
+    border: 2px outset #6e92a3;
+    outline: 1px solid #9bcee5;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9bcee5;
+}
+#botao:focus{
+    border: 3px outset #6e92a3;
+    outline: 1px solid #9bcee5;
+    background-color: #4e71812f;
+}
+.closed{
+    outline: 1px solid #e5b29b;
+}
+
+
+
+
+
+/*@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 100%}
+}*/
